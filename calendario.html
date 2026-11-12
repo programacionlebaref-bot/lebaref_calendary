@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEBAREF | Solicitar cita</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <!-- Fondo Apple cristalino -->
+  <div class="apple-bg"></div>
+  <div class="apple-bubble bubble-1"></div>
+  <div class="apple-bubble bubble-2"></div>
+  <div class="apple-bubble bubble-3"></div>
+
+  <main class="app-shell">
+    <section class="main-area">
+      <header class="topbar">
+        <div class="welcome">
+          <span class="welcome-rule"></span>
+          <div>
+            <h1>Bienvenido, <strong>Usuario</strong></h1>
+            <p>Agenda tu cita de forma rápida y sencilla.</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="workspace">
+        <section class="booking-panel glass-panel">
+          <div class="panel-heading">
+           
+            <div>
+              <h2 id="mainTitle">Solicitar Cita</h2>
+              <p id="mainSubtitle">Selecciona la fecha y hora que prefieras.</p>
+            </div>
+          </div>
+
+          <div class="steps" aria-label="Pasos para solicitar cita">
+            <div class="step active" data-step="1"><span>1</span>Fecha</div>
+            <div class="step-line"></div>
+            <div class="step" data-step="2"><span>2</span>Horario</div>
+            <div class="step-line"></div>
+            <div class="step" data-step="3"><span>3</span>Confirmación</div>
+          </div>
+
+          <!-- PASO 1 y 2: CALENDARIO + HORARIOS -->
+          <div class="booking-content" id="bookingContent">
+            <section class="calendar-section">
+              <div class="month-heading">
+                <button class="arrow-button" id="prevMonth" aria-label="Mes anterior">‹</button>
+                <h3 id="monthLabel">Noviembre 2026</h3>
+                <button class="arrow-button" id="nextMonth" aria-label="Mes siguiente">›</button>
+              </div>
+              <div class="calendar-grid weekday-row">
+                <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span>
+                <span>Vie</span><span>Sáb</span><span>Dom</span>
+              </div>
+              <div class="calendar-grid days-grid" id="calendarDays"></div>
+            </section>
+
+            <div class="content-divider"></div>
+
+            <section class="times-section">
+              <h3 class="times-title"><span class="clock-icon">◷</span>Horarios Disponibles</h3>
+              <div class="times-grid" id="timesGrid">
+                <button class="time-option" data-time="09:00"><span>◷</span>09:00</button>
+                <button class="time-option" data-time="09:30"><span>◷</span>09:30</button>
+                <button class="time-option selected" data-time="10:00"><span>◷</span>10:00 <b>✓</b></button>
+                <button class="time-option" data-time="10:30"><span>◷</span>10:30</button>
+                <button class="time-option" data-time="11:00"><span>◷</span>11:00</button>
+                <button class="time-option" data-time="11:30"><span>◷</span>11:30</button>
+                <button class="time-option" data-time="13:00"><span>◷</span>13:00</button>
+                <button class="time-option" data-time="13:30"><span>◷</span>13:30</button>
+                <button class="time-option" data-time="16:00"><span>◷</span>16:00</button>
+                <button class="time-option" data-time="16:30"><span>◷</span>16:30</button>
+              </div>
+            </section>
+          </div>
+
+          <!-- PASO 2: RESUMEN (aparece al dar Continuar, SIN LOGO) -->
+          <div class="summary-view hidden" id="summaryView">
+            <div class="summary-view-icon">▦</div>
+            <h3>Resumen de tu cita</h3>
+            <p>Revisa que todo esté correcto antes de confirmar.</p>
+            <div class="summary-view-card">
+              <div class="summary-view-detail">
+                <span class="detail-icon">▦</span>
+                <div><small>Fecha</small><strong id="summaryDate">10 de Noviembre, 2026</strong></div>
+              </div>
+              <div class="summary-view-detail">
+                <span class="detail-icon">◷</span>
+                <div><small>Hora</small><strong id="summaryTime">10:00 AM</strong></div>
+              </div>
+              <div class="summary-view-notice">
+                <span>ⓘ</span>
+                <p>Al confirmar, te avisaremos por correo y por mensaje.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+          <div class="panel-footer" id="panelFooter">
+            <button class="back-button hidden" id="backButton">Volver</button>
+            <!-- Paso 1-2 -->
+            <button class="continue-button" id="continueButton">Continuar <span>›</span></button>
+            <!-- Paso 3 - aparece en el resumen -->
+            <button class="confirm-button hidden" id="confirmButton">Confirmar Cita ✓</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- VENTANA FINAL - PASO 3 -->
+  <div class="modal-overlay hidden" id="confirmModal">
+    <div class="modal-card">
+      <div class="modal-icon">◷</div>
+      <span class="modal-badge">PASO 3 • CONFIRMACIÓN</span>
+      <h3>Tu cita está en proceso de confirmación</h3>
+      <p>Ten paciencia, pronto te llegará un correo electrónico y un mensaje a tu número telefónico.</p>
+      <div class="modal-appointment">
+        <span id="modalDate">Fecha: 10 de Noviembre, 2026</span>
+        <span id="modalTime">Hora: 10:00 AM</span>
+      </div>
+      <button class="modal-button" id="closeModal">Entendido, gracias</button>
+      
+    </div>
+  </div>
+
+  <script>
+    const monthNames = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+    const calendarDays = document.getElementById("calendarDays");
+    const monthLabel = document.getElementById("monthLabel");
+    const summaryDate = document.getElementById("summaryDate");
+    const summaryTime = document.getElementById("summaryTime");
+    const timesGrid = document.getElementById("timesGrid");
+    const bookingContent = document.getElementById("bookingContent");
+    const summaryView = document.getElementById("summaryView");
+    const continueButton = document.getElementById("continueButton");
+    const confirmButton = document.getElementById("confirmButton");
+    const backButton = document.getElementById("backButton");
+    const panelFooter = document.getElementById("panelFooter");
+    const confirmModal = document.getElementById("confirmModal");
+
+    let viewMonth = new Date(2026, 10, 1);
+    let selectedDate = new Date(2026, 10, 10);
+    let selectedTime = "10:00";
+    let currentStep = 1;
+
+    function sameDay(a,b){ return a.getFullYear()===b.getFullYear() && a.getMonth()===b.getMonth() && a.getDate()===b.getDate(); }
+    function formatDate(date){ return `${date.getDate()} de ${monthNames[date.getMonth()]}, ${date.getFullYear()}`; }
+    function formatTime(time){
+      const [h,m] = time.split(":").map(Number);
+      const suffix = h >= 12 ? "PM" : "AM";
+      const dh = h % 12 || 12;
+      return `${String(dh).padStart(2,"0")}:${String(m).padStart(2,"0")} ${suffix}`;
+    }
+    function updateSummary(){
+      summaryDate.textContent = formatDate(selectedDate);
+      summaryTime.textContent = formatTime(selectedTime);
+    }
+    function renderCalendar(){
+      calendarDays.innerHTML = "";
+      monthLabel.textContent = `${monthNames[viewMonth.getMonth()]} ${viewMonth.getFullYear()}`;
+      const firstDay = new Date(viewMonth.getFullYear(), viewMonth.getMonth(), 1);
+      const mondayOffset = (firstDay.getDay() + 6) % 7;
+      const daysInMonth = new Date(viewMonth.getFullYear(), viewMonth.getMonth()+1, 0).getDate();
+      const prevDays = new Date(viewMonth.getFullYear(), viewMonth.getMonth(), 0).getDate();
+      for(let i=0;i<42;i++){
+        let date, muted=false;
+        if(i < mondayOffset){ date = new Date(viewMonth.getFullYear(), viewMonth.getMonth()-1, prevDays - mondayOffset + i + 1); muted=true; }
+        else if(i >= mondayOffset + daysInMonth){ date = new Date(viewMonth.getFullYear(), viewMonth.getMonth()+1, i - mondayOffset - daysInMonth + 1); muted=true; }
+        else { date = new Date(viewMonth.getFullYear(), viewMonth.getMonth(), i - mondayOffset + 1); }
+        const btn = document.createElement("button");
+        btn.type="button"; btn.textContent=date.getDate();
+        if(muted) btn.classList.add("muted");
+        if(sameDay(date,selectedDate)) btn.classList.add("selected");
+        btn.addEventListener("click", ()=>{
+          selectedDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+          if(muted) viewMonth = new Date(date.getFullYear(), date.getMonth(), 1);
+          renderCalendar(); updateSummary();
+        });
+        calendarDays.appendChild(btn);
+      }
+    }
+    document.getElementById("prevMonth").addEventListener("click", ()=>{ viewMonth = new Date(viewMonth.getFullYear(), viewMonth.getMonth()-1, 1); renderCalendar(); });
+    document.getElementById("nextMonth").addEventListener("click", ()=>{ viewMonth = new Date(viewMonth.getFullYear(), viewMonth.getMonth()+1, 1); renderCalendar(); });
+
+    timesGrid.addEventListener("click", e=>{
+      const opt = e.target.closest(".time-option"); if(!opt) return;
+      document.querySelectorAll(".time-option").forEach(item=>{ item.classList.remove("selected"); item.querySelector("b")?.remove(); });
+      opt.classList.add("selected");
+      const check = document.createElement("b"); check.textContent="✓"; opt.appendChild(check);
+      selectedTime = opt.dataset.time; updateSummary();
+    });
+
+    function setStep(step){
+      currentStep = step;
+      document.querySelectorAll(".steps .step").forEach(item=>{
+        const n = Number(item.dataset.step);
+        item.classList.toggle("active", n === step);
+        item.classList.toggle("done", n < step);
+      });
+      const title = document.getElementById("mainTitle");
+      const subtitle = document.getElementById("mainSubtitle");
+      if(step === 1){
+        title.textContent = "Solicitar Cita";
+        subtitle.textContent = "Selecciona la fecha y hora que prefieras.";
+        bookingContent.classList.remove("hidden");
+        summaryView.classList.add("hidden");
+        continueButton.classList.remove("hidden");
+        confirmButton.classList.add("hidden");
+        backButton.classList.add("hidden");
+      } else if(step === 2){
+        title.textContent = "Resumen de tu cita";
+        subtitle.textContent = "Confirma que la fecha y hora sean correctas.";
+        bookingContent.classList.add("hidden");
+        summaryView.classList.remove("hidden");
+        continueButton.classList.add("hidden");
+        confirmButton.classList.remove("hidden");
+        backButton.classList.remove("hidden");
+        updateSummary();
+      }
+    }
+
+    continueButton.addEventListener("click", ()=> setStep(2));
+    backButton.addEventListener("click", ()=> setStep(1));
+
+    confirmButton.addEventListener("click", ()=>{
+      document.getElementById("modalDate").textContent = "Fecha: " + formatDate(selectedDate);
+      document.getElementById("modalTime").textContent = "Hora: " + formatTime(selectedTime);
+      document.querySelectorAll(".steps .step").forEach(item=>{
+        const n = Number(item.dataset.step);
+        item.classList.toggle("active", n === 3);
+        item.classList.toggle("done", n < 3);
+      });
+      confirmModal.classList.remove("hidden");
+    });
+
+    document.getElementById("closeModal").addEventListener("click", ()=> confirmModal.classList.add("hidden"));
+    confirmModal.addEventListener("click", e=>{ if(e.target === confirmModal) confirmModal.classList.add("hidden"); });
+  
+
+    renderCalendar(); updateSummary();
+  </script>
+</body>
+</html>

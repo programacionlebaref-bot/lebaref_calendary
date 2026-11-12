@@ -1,0 +1,10 @@
+# Archivos grandes y respaldos
+*.zip
+*_original_4k.mp4
+LEBAREF_logo_emerging_4K_20260929114742.mp4
+
+# Editor y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

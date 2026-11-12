@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LEBAREF – Servicios y Mantenimiento Integral. Más de una década construyendo soluciones y generando valor. REPSE: 34790 | RFC: LSM150727IP0." />
+  <title>LEBAREF | Servicios y Mantenimiento Integral | REPSE 34790</title>
+
+  <!-- Favicon & Web App Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#0D1B30" />
+
+  <!-- Open Graph & Social -->
+  <meta property="og:title" content="LEBAREF | Servicios y Mantenimiento Integral" />
+  <meta property="og:description" content="Servicios y Mantenimiento Integral. Más de una década construyendo soluciones y generando valor." />
+  <meta property="og:image" content="logo_lebaref.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Open Sans & Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css?v=5.2" />
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVBAR – minimal transparent
+  ====================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="navbar__logo" aria-label="LEBAREF inicio">
+        <img
+          src="logo_lebaref.png"
+          alt="LEBAREF - Ingenieria, Construccion, HVAC, Electricidad, Remodelacion"
+          class="navbar__logo-img"
+          width="500"
+          height="300"
+        />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="navbar__nav" id="nav-menu" aria-label="Menú principal">
+        <ul class="navbar__list">
+          <li><a href="#inicio"     class="navbar__link" data-section="inicio"     data-num="00">Inicio</a></li>
+          <li><a href="#servicios"  class="navbar__link" data-section="servicios"  data-num="01">Servicios</a></li>
+          <li><a href="#fortalezas" class="navbar__link" data-section="fortalezas" data-num="02">Cumplimiento</a></li>
+          <li><a href="#clientes"   class="navbar__link" data-section="clientes"   data-num="03">Clientes</a></li>
+          <li><a href="#contacto"   class="navbar__link" data-section="contacto"   data-num="04">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right area -->
+      <div class="navbar__right">
+        <a href="#contacto" class="navbar__cta-link">Solicitar Presupuesto</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+
+  <!-- ======================================================
+       1. HERO – full screen blueprint
+  ====================================================== -->
+  <section class="hero" id="inicio" aria-label="Sección principal">
+
+    <!-- Blueprint tiled background -->
+    <div class="hero__blueprint-bg" aria-hidden="true"></div>
+
+    <!-- ── Native Local MP4 Video Background (Máxima Calidad Local) ── -->
+    <div class="hero__video-wrap" aria-hidden="true">
+      <video
+        id="hero-local-video"
+        class="hero__video-element"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="hero-video-poster.jpg"
+      >
+        <source src="hero-video-mobile.mp4" type="video/mp4" media="(max-width: 768px)" />
+        <source src="hero-video-desktop.mp4" type="video/mp4" />
+        <source src="Crear_un_video_de_edificio_202608111228.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero__video-overlay" aria-hidden="true"></div>
+
+    <!-- Floating social bar (right edge) -->
+    <aside class="social-bar" aria-label="Redes sociales">
+      <a href="#" class="social-bar__link" aria-label="YouTube"   rel="noopener"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="social-bar__link" aria-label="LinkedIn"  rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="social-bar__link" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+    </aside>
+
+    <!-- Scroll indicator (bottom right) -->
+    <a href="#servicios" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+      <span class="scroll-indicator__text">Scroll</span>
+      <span class="scroll-indicator__line" aria-hidden="true"></span>
+    </a>
+
+    <!-- Bottom-left: Services link -->
+    <a href="#servicios" class="hero__about-link">
+      <span>Conoce nuestros servicios</span>
+      <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </a>
+
+    <!-- Subtle top-left gradient to make logo readable -->
+    <div class="hero__fade-top" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- ======================================================
+       2. SERVICIOS – Grid estilo Project Group (Segunda Página)
+  ====================================================== -->
+  <section class="services" id="servicios" aria-labelledby="services-title">
+    <!-- Tag superior izquierdo estilo Project Group -->
+    <div class="side-tag" aria-hidden="true">01 SERVICIOS</div>
+
+    <div class="container container--services">
+      <!-- Cabecera de Especialidades -->
+      <div class="section-top services-header-top">
+        <div>
+          <span class="label label--blue">— Catálogo de Especialidades</span>
+          <h2 class="h2" id="services-title">Nuestras Especialidades</h2>
+        </div>
+      </div>
+
+      <div class="services-grid services-grid--projectgroup">
+
+        <a href="servicio-hvac.html" class="svc-tile" tabindex="0" title="Ver especialidad Aire Acondicionado HVAC">
+          <div class="svc-tile__bg" aria-hidden="true">
+            <img src="project_hvac_1786409132447.jpg" alt="" class="svc-tile__media" loading="lazy" />
+            <div class="svc-tile__overlay"></div>
+          </div>
+          <span class="svc-tile__num">01</span>
+          <div class="svc-tile__content">
+            <h3 class="svc-tile__title">Aire Acondicionado HVAC</h3>
+            <span class="svc-tile__arrow">Ver especialidad <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="servicio-electricidad.html" class="svc-tile" tabindex="0" title="Ver especialidad Electricidad Baja y Media Tensión">
+          <div class="svc-tile__bg" aria-hidden="true">
+            <img src="project_electrical_1786409140344.jpg" alt="" class="svc-tile__media" loading="lazy" />
+            <div class="svc-tile__overlay"></div>
+          </div>
+          <span class="svc-tile__num">02</span>
+          <div class="svc-tile__content">
+            <h3 class="svc-tile__title">Electricidad Baja y Media Tensión</h3>
+            <span class="svc-tile__arrow">Ver especialidad <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="servicio-hidrosanitarias.html" class="svc-tile" tabindex="0" title="Ver especialidad Instalaciones Hidrosanitarias">
+          <div class="svc-tile__bg" aria-hidden="true">
+            <img src="project_plumbing.jpg" alt="" class="svc-tile__media" loading="lazy" />
+            <div class="svc-tile__overlay"></div>
+          </div>
+          <span class="svc-tile__num">03</span>
+          <div class="svc-tile__content">
+            <h3 class="svc-tile__title">Instalaciones Hidrosanitarias</h3>
+            <span class="svc-tile__arrow">Ver especialidad <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="servicio-ti.html" class="svc-tile" tabindex="0" title="Ver especialidad Tecnologías de la Información (TI)">
+          <div class="svc-tile__bg" aria-hidden="true">
+            <img src="project_ti.jpg" alt="" class="svc-tile__media" loading="lazy" />
+            <div class="svc-tile__overlay"></div>
+          </div>
+          <span class="svc-tile__num">04</span>
+          <div class="svc-tile__content">
+            <h3 class="svc-tile__title">Tecnologías de la Información (TI)</h3>
+            <span class="svc-tile__arrow">Ver especialidad <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="servicio-ingenieria-civil.html" class="svc-tile" tabindex="0" title="Ver especialidad Ingeniería y Obra Civil">
+          <div class="svc-tile__bg" aria-hidden="true">
+            <img src="project_civil.jpg" alt="" class="svc-tile__media" loading="lazy" />
+            <div class="svc-tile__overlay"></div>
+          </div>
+          <span class="svc-tile__num">05</span>
+          <div class="svc-tile__content">
+            <h3 class="svc-tile__title">Ingeniería y Obra Civil</h3>
+            <span class="svc-tile__arrow">Ver especialidad <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="servicio-mantenimiento.html" class="svc-tile" tabindex="0" title="Ver especialidad Remodelación y Mantenimiento">
+          <div class="svc-tile__bg" aria-hidden="true">
+            <img src="project_remodel_1786409149122.jpg" alt="" class="svc-tile__media" loading="lazy" />
+            <div class="svc-tile__overlay"></div>
+          </div>
+          <span class="svc-tile__num">06</span>
+          <div class="svc-tile__content">
+            <h3 class="svc-tile__title">Remodelación &amp; Mantenimiento</h3>
+            <span class="svc-tile__arrow">Ver especialidad <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Controles interactivos de deslizamiento en móvil (Flechas y Puntos) -->
+      <div class="carousel-controls-bar svc-carousel-nav" aria-label="Navegación de especialidades">
+        <button type="button" class="carousel-arrow js-svc-prev" aria-label="Especialidad anterior" title="Anterior">
+          <i class="fas fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <div class="carousel-dots-wrap">
+          <button type="button" class="svc-nav-dot is-active" data-idx="0" aria-label="Especialidad 1"></button>
+          <button type="button" class="svc-nav-dot" data-idx="1" aria-label="Especialidad 2"></button>
+          <button type="button" class="svc-nav-dot" data-idx="2" aria-label="Especialidad 3"></button>
+          <button type="button" class="svc-nav-dot" data-idx="3" aria-label="Especialidad 4"></button>
+          <button type="button" class="svc-nav-dot" data-idx="4" aria-label="Especialidad 5"></button>
+          <button type="button" class="svc-nav-dot" data-idx="5" aria-label="Especialidad 6"></button>
+        </div>
+        <button type="button" class="carousel-arrow js-svc-next" aria-label="Siguiente especialidad" title="Siguiente">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       2. CUMPLIMIENTOS OPERATIVOS / FORTALEZAS OFICIALES
+  ====================================================== -->
+  <section class="strengths" id="fortalezas" aria-labelledby="fortalezas-title">
+    <div class="side-tag" aria-hidden="true">02 CUMPLIMIENTO</div>
+    <div class="container">
+      <div class="clients-sec__title-wrap">
+        <span class="label label--blue">— Portafolio Corporativo</span>
+        <h2 class="h2" id="clientes-title">Cumplimientos Operativos</h2>
+        <div class="clients-sec__line" aria-hidden="true"></div>
+      </div>
+
+      <div class="strengths-grid">
+
+        <article class="strength-card">
+          <div class="strength-card__icon-box">
+            <i class="fas fa-clock-rotate-left"></i>
+          </div>
+          <h3 class="strength-card__title">Continuidad Operativa 24/7</h3>
+          <p class="strength-card__desc">
+            Atención preventiva, correctiva y emergencias con guardias activas para proteger la continuidad de procesos críticos en su empresa.
+          </p>
+        </article>
+
+        <article class="strength-card">
+          <div class="strength-card__icon-box">
+            <i class="fas fa-gears"></i>
+          </div>
+          <h3 class="strength-card__title">Capacidad Multidisciplinaria</h3>
+          <p class="strength-card__desc">
+            Integración de HVAC&amp;R, Media y Baja Tensión, Obra Civil, Acabados Arquitectónicos y TI bajo un solo equipo de ingeniería.
+          </p>
+        </article>
+
+        <article class="strength-card">
+          <div class="strength-card__icon-box">
+            <i class="fas fa-file-shield"></i>
+          </div>
+          <h3 class="strength-card__title">Cumplimiento &amp; REPSE 34790</h3>
+          <p class="strength-card__desc">
+            Registro REPSE vigente No. 34790, RFC LSM150727IP0, estricto apego a normas STPS, IMSS y entrega de carpetas con evidencias fotográficas.
+          </p>
+        </article>
+
+        <article class="strength-card">
+          <div class="strength-card__icon-box">
+            <i class="fas fa-map-location-dot"></i>
+          </div>
+          <h3 class="strength-card__title">Cobertura Peninsular &amp; Nacional</h3>
+          <p class="strength-card__desc">
+            Base operativa en Yucatán, Quintana Roo y Campeche, con capacidad probada de atención y despliegue estratégico en proyectos a nivel nacional.
+          </p>
+        </article>
+
+        <article class="strength-card">
+          <div class="strength-card__icon-box">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3 class="strength-card__title">+10 Años de Trayectoria</h3>
+          <p class="strength-card__desc">
+            Más de una década construyendo soluciones y generando valor en proyectos "Llave en Mano" (EPC) y pólizas de mantenimiento institucional.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- Controles interactivos de deslizamiento en móvil (Flechas y Puntos) -->
+      <div class="carousel-controls-bar strengths-carousel-nav" aria-label="Navegación de fortalezas">
+        <button type="button" class="carousel-arrow js-str-prev" aria-label="Pilar anterior" title="Anterior">
+          <i class="fas fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <div class="carousel-dots-wrap">
+          <button type="button" class="str-nav-dot is-active" data-idx="0" aria-label="Pilar 1"></button>
+          <button type="button" class="str-nav-dot" data-idx="1" aria-label="Pilar 2"></button>
+          <button type="button" class="str-nav-dot" data-idx="2" aria-label="Pilar 3"></button>
+          <button type="button" class="str-nav-dot" data-idx="3" aria-label="Pilar 4"></button>
+          <button type="button" class="str-nav-dot" data-idx="4" aria-label="Pilar 5"></button>
+        </div>
+        <button type="button" class="carousel-arrow js-str-next" aria-label="Siguiente pilar" title="Siguiente">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       3. CLIENTES QUE HAN CONFIADO EN NOSOTROS
+  ====================================================== -->
+  <section class="clients-sec" id="clientes" aria-labelledby="clientes-title">
+    <div class="side-tag" aria-hidden="true">03 CLIENTES</div>
+    <div class="container">
+      <div class="clients-sec__title-wrap">
+        <span class="label label--blue">— Confianza Empresarial</span>
+        <h2 class="h2" id="clientes-title">Clientes que han confiado en nosotros</h2>
+        <div class="clients-sec__line" aria-hidden="true"></div>
+      </div>
+
+      <!-- Carrusel Continuo Autónomo de Clientes (Logos Grandes y Vivos) -->
+      <div class="clients-carousel-wrap">
+        <div class="clients-carousel" id="clients-carousel" tabindex="0" aria-label="Carrusel continuo de clientes corporativos">
+          <div class="clients-carousel__track" id="clients-track">
+            <!-- Conjunto A (18 Clientes Vivos a Todo Color) -->
+            <div class="client-logo-item" title="Intertek / Cacao-Trace">
+              <img src="Imaganes de clientes/cliente1.png" alt="Logo Intertek" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Kekén">
+              <img src="Imaganes de clientes/cliente2.png" alt="Logo Kekén" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Poder Judicial del Estado de Yucatán">
+              <img src="Imaganes de clientes/cliente3.png" alt="Logo Poder Judicial de Yucatán" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Granjas Carroll de México (GCM)">
+              <img src="Imaganes de clientes/cliente5.png" alt="Logo GCM" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Grupo KUO">
+              <img src="Imaganes de clientes/cliente6.png" alt="Logo Grupo KUO" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="OXXO">
+              <img src="Imaganes de clientes/cliente7.png" alt="Logo OXXO" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="EMMSA">
+              <img src="Imaganes de clientes/cliente8.png" alt="Logo EMMSA" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Herdez">
+              <img src="Imaganes de clientes/cliente9.png" alt="Logo Herdez" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Caffenio">
+              <img src="Imaganes de clientes/cliente10.png" alt="Logo Caffenio" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Sodexo">
+              <img src="Imaganes de clientes/cliente14.png" alt="Logo Sodexo" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Telcel">
+              <img src="Imaganes de clientes/cliente16.png" alt="Logo Telcel" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Grupo Bafar">
+              <img src="Imaganes de clientes/cliente17.png" alt="Logo Grupo Bafar" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo">
+              <img src="Imaganes de clientes/cliente18.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo">
+              <img src="Imaganes de clientes/cliente20.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo">
+              <img src="Imaganes de clientes/cliente21.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo">
+              <img src="Imaganes de clientes/cliente22.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo">
+              <img src="Imaganes de clientes/cliente23.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo">
+              <img src="Imaganes de clientes/cliente24.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+
+            <!-- Conjunto B (Duplicado para Continuidad Infinita 100% Fluida) -->
+            <div class="client-logo-item" title="Intertek / Cacao-Trace" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente1.png" alt="Logo Intertek" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Kekén" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente2.png" alt="Logo Kekén" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Poder Judicial del Estado de Yucatán" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente3.png" alt="Logo Poder Judicial de Yucatán" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Granjas Carroll de México (GCM)" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente5.png" alt="Logo GCM" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Grupo KUO" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente6.png" alt="Logo Grupo KUO" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="OXXO" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente7.png" alt="Logo OXXO" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="EMMSA" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente8.png" alt="Logo EMMSA" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Herdez" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente9.png" alt="Logo Herdez" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Caffenio" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente10.png" alt="Logo Caffenio" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Sodexo" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente14.png" alt="Logo Sodexo" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Telcel" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente16.png" alt="Logo Telcel" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Grupo Bafar" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente17.png" alt="Logo Grupo Bafar" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente18.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente20.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente21.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente22.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente23.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+            <div class="client-logo-item" title="Cliente Corporativo" aria-hidden="true">
+              <img src="Imaganes de clientes/cliente24.png" alt="Cliente Corporativo LEBAREF" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       4. CONTACTO
+  ====================================================== -->
+  <section class="contact" id="contacto" aria-labelledby="contact-title">
+    <div class="side-tag" aria-hidden="true">04 CONTACTO</div>
+    <div class="contact__blueprint-bg" aria-hidden="true"></div>
+    <div class="container">
+
+      <div class="contact__grid">
+
+        <!-- Info side -->
+        <div class="contact__info">
+          <span class="label label--blue">— Hablemos</span>
+          <h2 class="h2" id="contact-title">Solicita tu<br/>Presupuesto</h2>
+          <p class="contact__desc">
+            Cuéntanos sobre tu proyecto en Mérida o cualquier parte de la región. Nuestro equipo de ingenieros analizará tus necesidades y te formulará una propuesta técnica sin costo.
+          </p>
+
+          <ul class="contact__list" aria-label="Información de contacto">
+            <li class="contact__item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Calle 33 No. 259 num int 2 por 12 y 14<br/>Col. Santa María Chuburna CP. 97138<br/>Mérida, Yucatán</span>
+            </li>
+            <li class="contact__item">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+529901010387">990 101 0387</a>
+            </li>
+            <li class="contact__item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:corporativo@lebaref.com">corporativo@lebaref.com</a>
+            </li>
+          </ul>
+
+          <div style="margin-top:20px;">
+            <a href="https://wa.me/529901010387?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20con%20LEBAREF" target="_blank" rel="noopener" class="link-arrow" style="display:inline-flex; align-items:center; gap:8px; font-weight:700; color:#25D366; border-color:#25D366;">
+              <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i> Contactar por WhatsApp
+            </a>
+          </div>
+
+          <!-- Acento decorativo azul -->
+          <div class="contact__accent-bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact__form" id="contact-form" novalidate aria-label="Formulario de contacto">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre" class="form-label">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required />
+              <span class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="empresa" class="form-label">Empresa</label>
+              <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nombre de tu empresa" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Correo *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="correo@ejemplo.com" required />
+              <span class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+52 55 0000 0000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="servicio" class="form-label">Servicio *</label>
+            <select id="servicio" name="servicio" class="form-input form-select" required>
+              <option value="" disabled selected>Selecciona un servicio</option>
+              <option value="hvac">Aire Acondicionado HVAC</option>
+              <option value="electricidad">Electricidad Baja y Media Tensión</option>
+              <option value="hidrosanitarias">Instalaciones Hidrosanitarias</option>
+              <option value="ti">Tecnologías de la Información (TI)</option>
+              <option value="ingenieria">Ingeniería y Obra Civil</option>
+              <option value="remodelacion">Remodelación &amp; Mantenimiento</option>
+            </select>
+            <span class="form-error" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="mensaje" class="form-label">Descripción del proyecto *</label>
+            <textarea id="mensaje" name="mensaje" class="form-input form-textarea" placeholder="Cuéntanos brevemente sobre tu proyecto..." required rows="4"></textarea>
+            <span class="form-error" role="alert" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn-submit" id="submit-btn">
+            <span class="btn-text">Enviar Solicitud</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+       
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/529901010387" class="whatsapp-fab" aria-label="WhatsApp" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba" hidden>
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="main.js?v=4.0"></script>
+
+
+
+
+</body>
+</html>
+

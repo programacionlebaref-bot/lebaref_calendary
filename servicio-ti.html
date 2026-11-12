@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="html-page-service">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tecnologías de la Información (TI) por LEBAREF – Infraestructura de red, cableado estructurado, fibra óptica, CCTV, control de acceso, cuartos de telecomunicaciones y ciberseguridad." />
+  <title>Tecnologías de la Información (TI) | LEBAREF</title>
+
+  <!-- Favicon & Web App Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#0D1B30" />
+
+  <!-- Google Fonts: Open Sans & Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css?v=3.0" />
+</head>
+<body class="page-service page-service--ti">
+
+  <!-- ======================================================
+       NAVBAR – minimal transparent
+  ====================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html#servicios" class="navbar__back" aria-label="Volver a Especialidades" title="Volver a Especialidades">
+        <svg class="navbar__back-arrow" viewBox="0 0 84 16" width="84" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M83 8H2M2 8L10 2M2 8L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="navbar__nav" id="nav-menu" aria-label="Menú principal">
+        <ul class="navbar__list">
+          <li><a href="index.html#inicio"     class="navbar__link" data-num="00">Inicio</a></li>
+          <li><a href="index.html#servicios"  class="navbar__link active" data-num="01">Servicios</a></li>
+          <li><a href="index.html#fortalezas" class="navbar__link" data-num="02">Fortalezas</a></li>
+          <li><a href="index.html#clientes"   class="navbar__link" data-num="03">Clientes</a></li>
+          <li><a href="#contacto"             class="navbar__link" data-num="04">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right area -->
+      <div class="navbar__right">
+        <a href="#contacto" class="navbar__cta-link">Solicitar Presupuesto</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+
+  <!-- ======================================================
+       HERO – Blueprint Technical Header
+  ====================================================== -->
+  <section class="service-hero" id="hero" aria-label="Cabecera técnica del servicio">
+    <div class="side-tag" aria-hidden="true">01 TI &amp; REDES</div>
+    <div class="container">
+
+      <div class="service-hero__grid">
+        <div class="service-hero__header">
+          <span class="service-hero__tag"><i class="fas fa-network-wired"></i> Especialidad Técnica // División Tecnológica</span>
+          <h1 class="service-hero__title">Tecnologías de la Información (TI) &amp; Infraestructura Digital</h1>
+          <p class="service-hero__desc">
+            Diseño, implementación, certificación y soporte integral para infraestructura tecnológica corporativa e industrial. Desde cableado estructurado de alta velocidad y centros de cómputo hasta videovigilancia con analítica avanzada, ciberseguridad perimetral y conectividad empresarial sin interrupciones.
+          </p>
+
+          <div class="service-hero__actions">
+            <a href="#contacto" class="btn-submit" style="display:inline-flex; width:auto; text-decoration:none; padding:12px 28px;">
+              <span class="btn-text">Solicitar Propuesta Técnica</span>
+              <svg class="btn-arrow-icon" viewBox="0 0 40 12" width="40" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M1 6H38M31 1L38 6L31 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#soluciones" class="link-arrow" style="font-weight:700;">
+              Explorar catálogo de soluciones <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+
+          <div class="service-badges" role="list">
+            <div class="service-badge" role="listitem"><i class="fas fa-certificate"></i><span>Normas ANSI/TIA-568 &amp; ISO 11801</span></div>
+            <div class="service-badge" role="listitem"><i class="fas fa-network-wired"></i><span>Certificación Fluke Networks</span></div>
+            <div class="service-badge" role="listitem"><i class="fas fa-shield-alt"></i><span>Ciberseguridad &amp; NVR IA</span></div>
+            <div class="service-badge" role="listitem"><i class="fas fa-server"></i><span>Racks, Sites y Respaldo UPS</span></div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Especialidad / Espacio de Imagen -->
+        <div class="service-video-card" aria-label="Especialidad Tecnologías de la Información TI">
+          <img
+            src="project_ti.jpg"
+            alt="Tecnologías de la Información TI LEBAREF"
+            class="service-video-element"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       SOLUCIONES TI INTEGRALES
+  ====================================================== -->
+  <section class="service-solutions" id="soluciones" aria-labelledby="soluciones-title">
+    <div class="side-tag" aria-hidden="true">02 SOLUCIONES</div>
+    <div class="container">
+      <div class="section-top">
+        <div>
+          <span class="label">— Arquitectura Integral</span>
+          <h2 class="h2" id="soluciones-title">Soluciones que Abarca Nuestra División TI</h2>
+          <p style="color:var(--c-text-muted); max-width:700px; margin-top:8px;">
+            Desarrollamos soluciones extremo a extremo con componentes homologados, orden riguroso en peinado de cables, memorias técnicas y documentación para auditoría.
+          </p>
+        </div>
+      </div>
+
+      <div class="solutions-grid">
+
+        <!-- 1. Desarrollo de Software a la Medida -->
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-code"></i></div>
+            <span class="solution-card__code">TI.01</span>
+          </div>
+          <h3 class="solution-card__title">Desarrollo de Software a la Medida &amp; Apps Móviles</h3>
+          <p class="solution-card__text">
+            Creación de plataformas web corporativas, aplicaciones móviles para iOS y Android, sistemas de control operativo (ERP/CRM) adaptados a sus procesos de negocio e integración fluida de APIs.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Plataformas web modernas y paneles de control empresarial</li>
+            <li><i class="fas fa-check"></i> Apps móviles nativas y multiplataforma (iOS &amp; Android)</li>
+            <li><i class="fas fa-check"></i> Sistemas ERP, CRM y automatización de procesos internos</li>
+            <li><i class="fas fa-check"></i> Arquitectura escalable, segura y código auditado</li>
+          </ul>
+        </article>
+
+        <!-- 2. Cableado & Fibra -->
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-network-wired"></i></div>
+            <span class="solution-card__code">TI.02</span>
+          </div>
+          <h3 class="solution-card__title">Cableado Estructurado &amp; Fibra Óptica</h3>
+          <p class="solution-card__text">
+            Tendido, conectorización y peinado normado de cableado UTP/FTP en Categorías 6, 6A y 7. Enlaces troncales de fibra óptica monomodo y multimodo con certificación reflectométrica (OTDR) y Fluke.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Certificación punto a punto con reporte Fluke Networks</li>
+            <li><i class="fas fa-check"></i> Enlaces de fibra monomodo y multimodo (OM3, OM4, OS2)</li>
+            <li><i class="fas fa-check"></i> Peinado técnico y rotulado según estándar TIA-606</li>
+            <li><i class="fas fa-check"></i> Canalizaciones en charola de aluminio, tubería conduit y escalerilla</li>
+          </ul>
+        </article>
+
+        <!-- 3. Videovigilancia CCTV Inteligente -->
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-video"></i></div>
+            <span class="solution-card__code">TI.03</span>
+          </div>
+          <h3 class="solution-card__title">Seguridad Electrónica &amp; CCTV con Analítica IA</h3>
+          <p class="solution-card__text">
+            Sistemas de videovigilancia IP de alta resolución (4K/Full HD) con analítica embebida de Inteligencia Artificial (detección perimetral, cruce de línea, lectura de placas LPR y reconocimiento facial).
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Cámaras IP domo, bullet, PTZ industriales y térmicas</li>
+            <li><i class="fas fa-check"></i> Analítica de video IA con detección inteligente de eventos</li>
+            <li><i class="fas fa-check"></i> Grabadores NVR redundantes y respaldo sincronizado en la nube</li>
+            <li><i class="fas fa-check"></i> Monitoreo centralizado local y acceso mediante app móvil</li>
+          </ul>
+        </article>
+
+        <!-- 4. Servicios Cloud & Microsoft 365 -->
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-cloud"></i></div>
+            <span class="solution-card__code">TI.04</span>
+          </div>
+          <h3 class="solution-card__title">Servicios Cloud, Microsoft 365 &amp; Servidores</h3>
+          <p class="solution-card__text">
+            Implementación, migración y administración de entornos en la nube. Configuración corporativa de Microsoft 365, Google Workspace, servidores virtuales en AWS/Azure y respaldos automatizados.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Despliegue de Microsoft 365 y correo corporativo seguro</li>
+            <li><i class="fas fa-check"></i> Servidores en la nube (AWS / Azure) y almacenamiento híbrido</li>
+            <li><i class="fas fa-check"></i> Políticas de respaldo automatizado contra pérdidas y ransomware</li>
+            <li><i class="fas fa-check"></i> Continuidad operativa con alta disponibilidad de datos</li>
+          </ul>
+        </article>
+
+        <!-- 5. Conectividad & Redes Wi-Fi 6 -->
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-wifi"></i></div>
+            <span class="solution-card__code">TI.05</span>
+          </div>
+          <h3 class="solution-card__title">Redes Empresariales, Wi-Fi 6 &amp; Enlaces</h3>
+          <p class="solution-card__text">
+            Despliegue de redes corporativas gestionadas. Conmutación L2/L3 con soporte PoE+, segmentación en VLANs, QoS para voz/video, Wi-Fi 6 industrial con roaming fluido y enlaces de antenas punto a punto.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Site survey térmico de radiofrecuencia (RF)</li>
+            <li><i class="fas fa-check"></i> Enlaces inalámbricos punto a punto para conectar bodegas</li>
+            <li><i class="fas fa-check"></i> Segmentación lógica de tráfico y red aislada para visitas</li>
+            <li><i class="fas fa-check"></i> Controladores de red unificados con gestión en la nube</li>
+          </ul>
+        </article>
+
+        <!-- 6. Centros de Cómputo, Control de Acceso & Soporte -->
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-server"></i></div>
+            <span class="solution-card__code">TI.06</span>
+          </div>
+          <h3 class="solution-card__title">Centros de Cómputo (MDF/IDF), Control de Acceso &amp; Pólizas TI</h3>
+          <p class="solution-card__text">
+            Acondicionamiento de sites, gabinetes rack de 19", sistemas UPS online de doble conversión, terminales biométricas faciales de acceso, barreras vehiculares y pólizas de soporte con SLA formal.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Racks, organizadores de cable y energía regulada por UPS</li>
+            <li><i class="fas fa-check"></i> Control de acceso biométrico facial y torniquetes peatonales</li>
+            <li><i class="fas fa-check"></i> Pólizas de mantenimiento preventivo y soporte técnico</li>
+            <li><i class="fas fa-check"></i> Respaldo empresarial bajo registro oficial REPSE 34790</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CONTACTO & COTIZACIÓN DIRECTA
+  ====================================================== -->
+  <section class="contact" id="contacto" aria-labelledby="contact-title">
+    <div class="side-tag" aria-hidden="true">03 CONTACTO</div>
+    <div class="contact__blueprint-bg" aria-hidden="true"></div>
+    <div class="container">
+
+      <div class="contact__grid">
+
+        <!-- Info side -->
+        <div class="contact__info">
+          <span class="label label--blue">— Proyectos Tecnológicos</span>
+          <h2 class="h2" id="contact-title">Cotiza tu Proyecto<br/>de TI</h2>
+          <p class="contact__desc">
+            Indícanos los requerimientos de tu empresa (número de nodos, cobertura de cámaras, enlaces de fibra o site de cómputo). Un especialista en TI te responderá con una propuesta técnico-económica personalizada.
+          </p>
+
+          <ul class="contact__list" aria-label="Información de contacto">
+            <li class="contact__item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Calle 33 No. 259 num int 2 por 12 y 14<br/>Col. Santa María Chuburna CP. 97138<br/>Mérida, Yucatán</span>
+            </li>
+            <li class="contact__item">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+529901010387">990 101 0387</a>
+            </li>
+            <li class="contact__item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:corporativo@lebaref.com">corporativo@lebaref.com</a>
+            </li>
+          </ul>
+
+          <div style="margin-top:24px;">
+            <a href="https://wa.me/529901010387?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20de%20Tecnolog%C3%ADas%20de%20la%20Informaci%C3%B3n%20(TI)%20con%20LEBAREF" target="_blank" rel="noopener" class="link-arrow" style="display:inline-flex; align-items:center; gap:8px; font-weight:700; color:#25D366;">
+              <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i> Contactar directamente por WhatsApp
+            </a>
+          </div>
+
+          <div class="contact__accent-bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact__form" id="contact-form" novalidate aria-label="Formulario de cotización de TI">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre" class="form-label">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required />
+              <span class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="empresa" class="form-label">Empresa</label>
+              <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nombre de tu empresa" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Correo *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="correo@ejemplo.com" required />
+              <span class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+52 55 0000 0000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="servicio" class="form-label">Servicio Seleccionado</label>
+            <select id="servicio" name="servicio" class="form-input form-select" required>
+              <option value="ti" selected>Tecnologías de la Información (TI)</option>
+              <option value="hvac">Aire Acondicionado HVAC</option>
+              <option value="electricidad">Electricidad Baja y Media Tensión</option>
+              <option value="hidrosanitarias">Instalaciones Hidrosanitarias</option>
+              <option value="ingenieria">Ingeniería y Obra Civil</option>
+              <option value="remodelacion">Remodelación &amp; Mantenimiento</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje" class="form-label">Detalles del Proyecto de TI *</label>
+            <textarea id="mensaje" name="mensaje" class="form-input form-textarea" placeholder="Describe qué requiere tu proyecto (p. ej. nodos de red, cámaras, fibra óptica, site, control de acceso)..." required rows="4"></textarea>
+            <span class="form-error" role="alert" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn-submit" id="submit-btn">
+            <span class="btn-text">Enviar Solicitud de Cotización</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+            <i class="fas fa-check-circle"></i>
+            ¡Solicitud de TI recibida! Nuestro ingeniero especialista se comunicará a la brevedad.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/529901010387" class="whatsapp-fab" aria-label="WhatsApp" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba" hidden>
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="main.js?v=3.0"></script>
+</body>
+</html>
+

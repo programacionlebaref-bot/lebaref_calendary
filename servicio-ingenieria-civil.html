@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="html-page-service">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ingeniería y Obra Civil por LEBAREF – Edificación industrial y comercial, estructuras de acero, cimentaciones, supervisión de obra y modelado BIM 3D." />
+  <title>Ingeniería y Obra Civil | LEBAREF</title>
+
+  <!-- Favicon & Web App Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#0D1B30" />
+
+  <!-- Google Fonts: Open Sans & Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css?v=3.0" />
+</head>
+<body class="page-service page-service--ingenieria">
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html#servicios" class="navbar__back" aria-label="Volver a Especialidades" title="Volver a Especialidades">
+        <svg class="navbar__back-arrow" viewBox="0 0 84 16" width="84" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M83 8H2M2 8L10 2M2 8L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <nav class="navbar__nav" id="nav-menu" aria-label="Menú principal">
+        <ul class="navbar__list">
+          <li><a href="index.html#inicio"     class="navbar__link" data-num="00">Inicio</a></li>
+          <li><a href="index.html#servicios"  class="navbar__link active" data-num="01">Servicios</a></li>
+          <li><a href="index.html#fortalezas" class="navbar__link" data-num="02">Fortalezas</a></li>
+          <li><a href="index.html#clientes"   class="navbar__link" data-num="03">Clientes</a></li>
+          <li><a href="#contacto"             class="navbar__link" data-num="04">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__right">
+        <a href="#contacto" class="navbar__cta-link">Solicitar Presupuesto</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <section class="service-hero" id="hero" aria-label="Cabecera técnica del servicio">
+    <div class="side-tag" aria-hidden="true">01 OBRA CIVIL</div>
+    <div class="container">
+
+      <div class="service-hero__grid">
+        <div class="service-hero__header">
+          <span class="service-hero__tag"><i class="fas fa-building"></i> Especialidad Estructural // Edificación &amp; Montaje</span>
+          <h1 class="service-hero__title">Ingeniería Estructural &amp; Obra Civil</h1>
+          <p class="service-hero__desc">
+            Desarrollo constructivo desde la fase de planeación y estudios preliminares hasta el levantamiento de naves industriales, complejos comerciales y edificaciones corporativas. Control riguroso de tiempos, costos y seguridad en sitio.
+          </p>
+
+          <div class="service-hero__actions">
+            <a href="#contacto" class="btn-submit" style="display:inline-flex; width:auto; text-decoration:none; padding:12px 28px;">
+              <span class="btn-text">Solicitar Proyecto Constructivo</span>
+              <svg class="btn-arrow-icon" viewBox="0 0 40 12" width="40" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M1 6H38M31 1L38 6L31 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#soluciones" class="link-arrow" style="font-weight:700;">
+              Ver catálogo estructural <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+
+          <div class="service-badges" role="list">
+            <div class="service-badge" role="listitem"><i class="fas fa-cubes"></i><span>Modelado BIM 3D &amp; MEP</span></div>
+            <div class="service-badge" role="listitem"><i class="fas fa-hard-hat"></i><span>Dirección DRO Certificada</span></div>
+            <div class="service-badge" role="listitem"><i class="fas fa-ruler-combined"></i><span>Mecánica de Suelos &amp; Topografía</span></div>
+            <div class="service-badge" role="listitem"><i class="fas fa-shield-alt"></i><span>Seguridad ISO 45001</span></div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Especialidad / Espacio de Imagen -->
+        <div class="service-video-card" aria-label="Especialidad Ingeniería y Obra Civil">
+          <img
+            src="project_civil.jpg"
+            alt="Ingeniería y Obra Civil LEBAREF"
+            class="service-video-element"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUCIONES -->
+  <section class="service-solutions" id="soluciones" aria-labelledby="soluciones-title">
+    <div class="side-tag" aria-hidden="true">02 SOLUCIONES</div>
+    <div class="container">
+      <div class="section-top">
+        <div>
+          <span class="label">— Capacidad Constructiva</span>
+          <h2 class="h2" id="soluciones-title">Soluciones en Ingeniería Civil y Edificación</h2>
+          <p style="color:var(--c-text-muted); max-width:700px; margin-top:8px;">
+            Equipo multidisciplinario de directores de obra, calculistas, topógrafos y maestros de obra certificados con maquinaria pesada propia.
+          </p>
+        </div>
+      </div>
+
+      <div class="solutions-grid">
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-building"></i></div>
+            <span class="solution-card__code">CIVIL.01</span>
+          </div>
+          <h3 class="solution-card__title">Construcción de Naves Industriales, Bodegas &amp; Acero</h3>
+          <p class="solution-card__text">
+            Diseño, cálculo, fabricación y montaje de estructura metálica pesada. Marcos rígidos, cubiertas autosoportantes y engargoladas tipo KR-18, naves de almacenaje y centros de distribución logística.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Soldaduras calificadas e inspección por ultrasonido/líquidos penetrantes</li>
+            <li><i class="fas fa-check"></i> Cubiertas y techumbres industriales con lámina KR-18 y aislamiento</li>
+            <li><i class="fas fa-check"></i> Muros prefabricados de concreto y paneles aislantes tipo sándwich</li>
+            <li><i class="fas fa-check"></i> Proyectos "Llave en Mano" con entrega documental completa</li>
+          </ul>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-trowel-bricks"></i></div>
+            <span class="solution-card__code">CIVIL.02</span>
+          </div>
+          <h3 class="solution-card__title">Cimentaciones &amp; Estructuras de Concreto</h3>
+          <p class="solution-card__text">
+            Cimentaciones superficiales y profundas (zapatas aisladas y corridas, losas de cimentación, pilotes y pilas de cimentación). Estructuras de concreto armado coladas en sitio o prefabricadas.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Concretos f'c 250 a 400 kg/cm² con aditivos plastificantes</li>
+            <li><i class="fas fa-check"></i> Cimbras metálicas y fenólicas para acabados aparentes</li>
+            <li><i class="fas fa-check"></i> Pruebas de revenimiento y resistencia a la compresión en laboratorio</li>
+            <li><i class="fas fa-check"></i> Muros de contención y estabilización de taludes</li>
+          </ul>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-cubes-stacked"></i></div>
+            <span class="solution-card__code">CIVIL.03</span>
+          </div>
+          <h3 class="solution-card__title">Modelado BIM 3D &amp; Estudios de Ingeniería</h3>
+          <p class="solution-card__text">
+            Ingeniería de detalle bajo metodología BIM (Building Information Modeling). Detección temprana de interferencias entre estructura e instalaciones MEP, cuantificación volumétrica precisa y memorias de cálculo.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Modelado en Revit, Navisworks y Tekla Structures</li>
+            <li><i class="fas fa-check"></i> Estudios de mecánica de suelos y geotecnia</li>
+            <li><i class="fas fa-check"></i> Análisis sísmico tridimensional con software ETABS/SAP2000</li>
+            <li><i class="fas fa-check"></i> Levantamientos topográficos con dron y estación total</li>
+          </ul>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-truck-monster"></i></div>
+            <span class="solution-card__code">CIVIL.04</span>
+          </div>
+          <h3 class="solution-card__title">Patios de Maniobra, Pisos Industriales, Banquetas &amp; Rampas</h3>
+          <p class="solution-card__text">
+            Terracerías, pavimentaciones de alta especificación y obra civil exterior. Construcción de pisos industriales con acabado pulido epóxico, patios de maniobra de concreto hidráulico MR y rampas de carga.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Pavimentos de concreto MR (módulo de ruptura) para tránsito pesado</li>
+            <li><i class="fas fa-check"></i> Rampas de carga/descarga y andenes con niveladores</li>
+            <li><i class="fas fa-check"></i> Banquetas, guarniciones y sistemas de drenaje pluvial superficial</li>
+            <li><i class="fas fa-check"></i> Compactación controlada según norma Proctor (95% - 98%)</li>
+          </ul>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-clipboard-user"></i></div>
+            <span class="solution-card__code">CIVIL.05</span>
+          </div>
+          <h3 class="solution-card__title">Supervisión Técnica &amp; Gestión de Obra (Project Management)</h3>
+          <p class="solution-card__text">
+            Administración profesional de proyectos conforme al estándar PMI. Aseguramiento de calidad en materiales, control de estimaciones, cumplimiento de calendario de obra y gestión de contratistas.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Informes semanales con curvas S de avance físico-financiero</li>
+            <li><i class="fas fa-check"></i> Firma de Director Responsable de Obra (DRO) y Corresponsables</li>
+            <li><i class="fas fa-check"></i> Gestión de licencias y permisos municipales</li>
+            <li><i class="fas fa-check"></i> Auditorías de calidad y seguridad en sitio</li>
+          </ul>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-layer-group"></i></div>
+            <span class="solution-card__code">CIVIL.06</span>
+          </div>
+          <h3 class="solution-card__title">Edificación Comercial &amp; Corporativa</h3>
+          <p class="solution-card__text">
+            Construcción de edificios de oficinas, plazas comerciales y centros de distribución. Coordinación integral llave en mano que integra la obra civil con las instalaciones electromecánicas de LEBAREF.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Fachadas ventiladas, cancelerías y muros cortina de cristal</li>
+            <li><i class="fas fa-check"></i> Interiores diáfanos con losas postensadas de grandes claros</li>
+            <li><i class="fas fa-check"></i> Coordinación llave en mano: Civil + Eléctrico + HVAC + TI</li>
+            <li><i class="fas fa-check"></i> Entrega final limpia lista para operar (Turnkey)</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto" aria-labelledby="contact-title">
+    <div class="side-tag" aria-hidden="true">03 CONTACTO</div>
+    <div class="contact__blueprint-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <span class="label label--blue">— Obras &amp; Estructuras</span>
+          <h2 class="h2" id="contact-title">Cotiza tu Proyecto<br/>de Obra Civil</h2>
+          <p class="contact__desc">
+            Presenta los requerimientos de tu obra (metros cuadrados, tipo de estructura o proyecto ejecutivo). Nuestros ingenieros estructuristas analizarán tu proyecto.
+          </p>
+          <ul class="contact__list" aria-label="Información de contacto">
+            <li class="contact__item"><i class="fas fa-map-marker-alt"></i><span>Calle 33 No. 259 num int 2 por 12 y 14<br/>Col. Santa María Chuburna CP. 97138<br/>Mérida, Yucatán</span></li>
+            <li class="contact__item"><i class="fas fa-phone-alt"></i><a href="tel:+529901010387">990 101 0387</a></li>
+            <li class="contact__item"><i class="fas fa-envelope"></i><a href="mailto:corporativo@lebaref.com">corporativo@lebaref.com</a></li>
+          </ul>
+          <div style="margin-top:24px;">
+            <a href="https://wa.me/529901010387?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20de%20Ingenier%C3%ADa%20y%20Obra%20Civil%20con%20LEBAREF" target="_blank" rel="noopener" class="link-arrow" style="display:inline-flex; align-items:center; gap:8px; font-weight:700; color:#25D366;">
+              <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i> Cotizar por WhatsApp
+            </a>
+          </div>
+          <div class="contact__accent-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+
+        <form class="contact__form" id="contact-form" novalidate aria-label="Formulario de cotización de obra civil">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre" class="form-label">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required />
+              <span class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="empresa" class="form-label">Empresa</label>
+              <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nombre de tu empresa" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Correo *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="correo@ejemplo.com" required />
+              <span class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+52 55 0000 0000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="servicio" class="form-label">Servicio Seleccionado</label>
+            <select id="servicio" name="servicio" class="form-input form-select" required>
+              <option value="ingenieria" selected>Ingeniería y Obra Civil</option>
+              <option value="hvac">Aire Acondicionado HVAC</option>
+              <option value="electricidad">Electricidad Baja y Media Tensión</option>
+              <option value="hidrosanitarias">Instalaciones Hidrosanitarias</option>
+              <option value="ti">Tecnologías de la Información (TI)</option>
+              <option value="remodelacion">Remodelación &amp; Mantenimiento</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje" class="form-label">Detalles de la Obra *</label>
+            <textarea id="mensaje" name="mensaje" class="form-input form-textarea" placeholder="Describe superficie m², tipo de nave, edificio, terracería o supervisión requerida..." required rows="4"></textarea>
+            <span class="form-error" role="alert" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn-submit" id="submit-btn">
+            <span class="btn-text">Enviar Solicitud de Obra Civil</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+            <i class="fas fa-check-circle"></i>
+            ¡Solicitud de obra civil recibida! Un ingeniero especialista se pondrá en contacto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/529901010387" class="whatsapp-fab" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba" hidden><i class="fas fa-chevron-up"></i></button>
+
+  <script src="main.js?v=3.0"></script>
+</body>
+</html>
+

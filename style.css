@@ -1,0 +1,899 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f0e9;
+    color: #191919;
+}
+
+
+/* FONDO CUADRICULADO */
+
+.main-container {
+    min-height: 100vh;
+    padding: 65px 6%;
+    background-color: #E8EDF5;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.045) 1px, transparent 1px);
+    background-size: 35px 35px;
+}
+
+
+/* ENCABEZADO */
+
+.page-header {
+    max-width: 1350px;
+    margin: auto;
+    margin-bottom: 55px;
+}
+
+.header-label {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    color: #1B9CFC;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.header-label span {
+    width: 42px;
+    height: 2px;
+    background-color: #1B9CFC;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-content h1 {
+    font-size: clamp(45px, 5.5vw, 76px);
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -4px;
+}
+
+.header-content h1 span {
+    color: #5A6E8A;
+}
+
+.header-description {
+    max-width: 430px;
+    border-left: 1px solid #1B9CFC;
+    padding: 8px 0 8px 22px;
+    color: #000000;
+    font-size: 15px;
+    line-height: 2;
+}
+
+
+
+.booking-container {
+    max-width: 1350px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 278px 1fr;
+    background-color: #FFFFFF;
+    border: 1px solid #CED4DA;
+}
+
+
+/* PANEL LATERAL */
+
+.sidebar {
+    background-color: #1A2E4A;
+    color: white;
+    padding: 38px 34px;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+}
+
+.request-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1B9CFC;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 65px;
+}
+
+.request-number i {
+    color: #1B9CFC;
+    font-size: 16px;
+}
+
+.process-title {
+    font-size: 9px;
+    color: #1B9CFC;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.sidebar h2 {
+    font-size: 29px;
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+
+
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 25px;
+    opacity: 0.35;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step-icon {
+    width: 43px;
+    height: 43px;
+    border: 1px solid #1B9CFC;
+    color: #1B9CFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.step.active .step-icon {
+    border-color: #1B9CFC;
+}
+
+.step small {
+    display: block;
+    color: #1B9CFC;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.step h6 {
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* CONTACTO LATERAL */
+
+.sidebar-contact {
+    border-top: 1px solid #1B9CFC;
+    margin-top: auto;
+    padding-top: 25px;
+}
+
+.sidebar-contact small {
+    color: #1B9CFC;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.sidebar-contact h6 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.sidebar-contact p {
+    color: #1B9CFC;
+    font-size: 12px;
+    margin: 0;
+}
+.whatsapp-contacto {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.whatsapp-icono {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.whatsapp-contacto:hover {
+  color: #25D366;
+  text-decoration: none;
+}
+
+
+/* CONTENIDO DEL FORMULARIO */
+
+.form-content {
+    padding: 50px;
+}
+
+.section-number {
+    color: #1B9CFC;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.form-content h2 {
+    max-width: 650px;
+    font-size: clamp(25px, 3vw, 38px);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 18px;
+}
+
+.form-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #1A2E4A;
+  text-transform: uppercase;
+}
+
+/* CAJA DE SUBIR FOTO */
+.upload-box {
+  width: 100%;
+  border: 1px dashed #c9c2b8;
+  background: #FDFBF7;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.upload-box:hover {
+  border-color: #1A2E4A;
+  background: #F2EEE6;
+}
+.upload-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.upload-text strong {
+  font-size: 13px;
+  color: #1A2E4A;
+  font-weight: 600;
+}
+.upload-btn {
+  background: #111111;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 12px 18px;
+  white-space: nowrap;
+}
+.preview-foto {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e5e0d8;
+  padding: 10px;
+  background: white;
+}
+.preview-foto img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.preview-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+#nombre-foto {
+  font-size: 13px;
+  color: #1368df;
+}
+#quitar-foto {
+  border: none;
+  background: none;
+  color: #000000;
+  font-size: 12px;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* ETIQUETAS */
+.form-content label {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+    margin-bottom: 11px;
+}
+
+.form-content label span {
+    color: #1B9CFC;
+}
+/* INPUTS Y SELECT */
+.form-control,
+.form-select {
+    min-height: 55px;
+    border: 1px solid #ADB5BD;
+    border-radius: 0;
+    background-color: #fffdfa;
+    font-size: 14px;
+    color: #6E8298;
+    padding: 14px 16px;
+    box-shadow: none !important;
+}
+
+.form-control::placeholder {
+    color: #1B9CFC;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #3D4F6B;
+    background-color: #EAF1F8;
+}
+
+textarea.form-control {
+    min-height: 125px;
+    resize: vertical;
+}
+
+/* PIE DEL FORMULARIO */
+.form-footer {
+    border-top: 1px solid #1B9CFC;
+    margin-top: 38px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-footer p {
+    color: #1B9CFC;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/* BOTÓN CALENDARIO */
+
+.calendar-button {
+    background-color: #19191b;
+    color: white;
+    border: none;
+    padding: 20px 27px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.calendar-button i {
+    font-size: 15px;
+}
+
+.calendar-button:hover {
+    background-color: #0E7CD8;
+    color: white;
+}
+
+
+@media (max-width: 900px) {
+
+    .main-container {
+        padding: 40px 4%;
+    }
+
+    .header-content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .header-description {
+        max-width: 100%;
+    }
+
+    .booking-container {
+        grid-template-columns: 230px 1fr;
+    }
+
+    .sidebar {
+        padding: 30px 22px;
+    }
+
+    .form-content {
+        padding: 35px 25px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .main-container {
+        padding: 35px 15px;
+    }
+
+    .header-content h1 {
+        font-size: 47px;
+        letter-spacing: -2px;
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        min-height: auto;
+    }
+
+    .request-number {
+        margin-bottom: 35px;
+    }
+
+    .sidebar h2 {
+        font-size: 25px;
+    }
+
+    .sidebar-contact {
+        margin-top: 20px;
+    }
+
+    .form-content {
+        padding: 30px 20px;
+    }
+
+    .form-content h2 {
+        font-size: 27px;
+    }
+
+    .form-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .calendar-button {
+        width: 100%;
+    }
+    
+}
+/* TRANSICIÓN ENTRE FORMULARIO Y CALENDARIO */
+
+[hidden] {
+    display: none !important;
+}
+
+.calendar-content {
+    min-width: 0;
+    width: 100%;
+    padding: 25px;
+    background: #ffffff;
+}
+
+.calendar-content iframe {
+    display: block;
+    width: 100%;
+    min-height: 850px;
+    border: none;
+}
+
+.back-to-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 13px 20px;
+    background: #1A2E4A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.back-to-form:hover {
+    background: #0E7CD8;
+}
+
+@media (max-width: 650px) {
+    .calendar-content {
+        padding: 15px;
+    }
+
+    .calendar-content iframe {
+        min-height: 1150px;
+    }
+
+    .back-to-form {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* ======================================
+   INTEGRACIÓN DEL CALENDARIO
+====================================== */
+
+[hidden] {
+    display: none !important;
+}
+
+/* El formulario y el calendario ocupan el mismo espacio */
+.form-content,
+.calendar-content {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+}
+/* Contenedor del calendario */
+.calendar-content {
+    width: 100%;
+    padding: 30px;
+    background: #ffffff;
+}
+.calendar-content iframe {
+    display: block;
+    width: 100%;
+    min-height: 850px;
+    border: none;
+    background: #ffffff;
+}
+
+/* Botón para regresar */
+.back-to-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 14px 22px;
+    background: #1A2E4A;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.back-to-form:hover {
+    background: #0E7CD8;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 650px) {
+
+    .form-content,
+    .calendar-content {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .calendar-content {
+        padding: 15px;
+    }
+
+    .calendar-content iframe {
+        min-height: 1150px;
+    }
+
+    .back-to-form {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* --- ARREGLO PARA CELULAR --- */
+@media (max-width: 650px) {
+    * {
+    box-sizing: border-box;
+  }
+
+  .main-container {
+    padding: 20px 15px !important;
+    width: 100%;
+  }
+
+  /* Que todo lo que sea input y textarea ocupe el 100% */
+  textarea, input, select {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* ESTE ES EL QUE ESTÁ ROTO EN TU FOTO */
+  /* El contenedor de subir imagen */
+  .upload-box, 
+  .dropzone, 
+  .upload-area {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 12px;
+    padding: 20px 15px !important;
+  }
+
+  /* El texto de "Arrastra tu imagen..." */
+  .upload-box p,
+  .dropzone p,
+  .upload-area p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  /* El botón de SELECCIONAR IMAGEN */
+  .upload-box button,
+  .dropzone button,
+  .upload-area button {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px !important;
+    white-space: normal;
+  }
+
+  /* El botón negro de ABRIR CALENDARIO */
+  .btn-calendario, 
+  .btn-black {
+    width: 100% !important;
+  }
+}
+.sidebar-imagen {
+  width: 100%;
+  margin: 18px 0 20px 0; /* espacio arriba y abajo */
+}
+
+.sidebar-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: white; /* si el logo es azul y tu fondo es azul oscuro */
+  padding: 12px;
+  border-radius: 8px;
+}
+/* TRANSICIÓN ENTRE FORMULARIO Y CALENDARIO */
+
+[hidden] {
+    display: none !important;
+}
+
+.calendar-content {
+    min-width: 0;
+    width: 100%;
+    padding: 25px;
+    background: #ffffff;
+}
+
+.calendar-content iframe {
+    display: block;
+    width: 100%;
+    min-height: 850px;
+    border: none;
+}
+
+.back-to-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 13px 20px;
+    background: #1A2E4A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.back-to-form:hover {
+    background: #0E7CD8;
+}
+
+@media (max-width: 650px) {
+    .calendar-content {
+        padding: 15px;
+    }
+
+    .calendar-content iframe {
+        min-height: 1150px;
+    }
+
+    .back-to-form {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* ======================================
+   INTEGRACIÓN DEL CALENDARIO
+====================================== */
+
+[hidden] {
+    display: none !important;
+}
+
+/* El formulario y el calendario ocupan el mismo espacio */
+.form-content,
+.calendar-content {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+}
+
+.calendar-content {
+    width: 100%;
+    padding: 30px;
+    background: transparent; /* para que se vea el cristal del calendario */
+}
+.calendar-content iframe {
+    display: block;
+    width: 100%;
+    min-height: 920px;
+    border: none;
+    background: transparent;
+    border-radius: 28px;
+}
+
+/* Botón para regresar */
+.back-to-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 14px 22px;
+    background: #1A2E4A;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.back-to-form:hover {
+    background: #0E7CD8;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 650px) {
+
+    .form-content,
+    .calendar-content {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .calendar-content {
+        padding: 15px;
+    }
+
+    .calendar-content iframe {
+        min-height: 1150px;
+    }
+
+    .back-to-form {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* --- ARREGLO PARA CELULAR --- */
+@media (max-width: 650px) {
+    * {
+    box-sizing: border-box;
+  }
+
+  .main-container {
+    padding: 20px 15px !important;
+    width: 100%;
+  }
+
+  /* Que todo lo que sea input y textarea ocupe el 100% */
+  textarea, input, select {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* ESTE ES EL QUE ESTÁ ROTO EN TU FOTO */
+  /* El contenedor de subir imagen */
+  .upload-box, 
+  .dropzone, 
+  .upload-area {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 12px;
+    padding: 20px 15px !important;
+  }
+
+  /* El texto de "Arrastra tu imagen..." */
+  .upload-box p,
+  .dropzone p,
+  .upload-area p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  /* El botón de SELECCIONAR IMAGEN */
+  .upload-box button,
+  .dropzone button,
+  .upload-area button {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px !important;
+    white-space: normal;
+  }
+
+  /* El botón negro de ABRIR CALENDARIO */
+  .btn-calendario, 
+  .btn-black {
+    width: 100% !important;
+  }
+}
+/* IMAGEN LEBAREF EN SIDEBAR */
+.sidebar-imagen {
+  width: 100%;
+  margin: 0 0 28px 0; /* espacio para que no se pegue al PROCESO DE AGENDA */
+}
+
+.sidebar-imagen img {
+  display: block;
+  width: 100%;
+  height: 120px; /* si la quieres un poquito más larga, ponle 140px o 160px */
+  object-fit: contain; /* para que no se corte ni se deforme el logo */
+  background: #FFFFFF;
+  padding: 14px 16px;
+  border-radius: 12px;
+}

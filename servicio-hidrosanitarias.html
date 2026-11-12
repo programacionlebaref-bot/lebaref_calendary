@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="html-page-service">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Instalaciones Hidrosanitarias por LEBAREF – Sistemas de bombeo hidroneumático, redes de agua potable, drenaje pluvial y sanitario, redes contra incendios NFPA y plantas de tratamiento." />
+  <title>Instalaciones Hidrosanitarias | LEBAREF</title>
+
+  <!-- Favicon & Web App Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#0D1B30" />
+
+  <!-- Google Fonts: Open Sans & Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css?v=3.0" />
+</head>
+<body class="page-service page-service--hidrosanitarias">
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html#servicios" class="navbar__back" aria-label="Volver a Especialidades" title="Volver a Especialidades">
+        <svg class="navbar__back-arrow" viewBox="0 0 84 16" width="84" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M83 8H2M2 8L10 2M2 8L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <nav class="navbar__nav" id="nav-menu" aria-label="Menú principal">
+        <ul class="navbar__list">
+          <li><a href="index.html#inicio"     class="navbar__link" data-num="00">Inicio</a></li>
+          <li><a href="index.html#servicios"  class="navbar__link active" data-num="01">Servicios</a></li>
+          <li><a href="index.html#fortalezas" class="navbar__link" data-num="02">Fortalezas</a></li>
+          <li><a href="index.html#clientes"   class="navbar__link" data-num="03">Clientes</a></li>
+          <li><a href="#contacto"             class="navbar__link" data-num="04">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__right">
+        <a href="#contacto" class="navbar__cta-link">Solicitar Presupuesto</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <section class="service-hero" id="hero" aria-label="Cabecera técnica del servicio">
+    <div class="side-tag" aria-hidden="true">01 HIDROSANITARIAS</div>
+    <div class="container">
+
+      <div class="service-hero__grid">
+        <div class="service-hero__header">
+          <span class="service-hero__tag"><i class="fas fa-water"></i> Especialidad Hidráulica // Fluidos &amp; Drenaje</span>
+          <h1 class="service-hero__title">Instalaciones Hidrosanitarias &amp; Redes Hidráulicas</h1>
+          <p class="service-hero__desc">
+            Ingeniería de fluidos para el suministro confiable de agua potable, manejo eficiente de aguas residuales y pluviales, sistemas hidroneumáticos de presión constante y redes de protección contra incendio para edificaciones e industrias.
+          </p>
+
+          <div class="service-hero__actions">
+            <a href="#contacto" class="btn-submit" style="display:inline-flex; width:auto; text-decoration:none; padding:12px 28px;">
+              <span class="btn-text">Solicitar Proyecto Hidráulico</span>
+              <svg class="btn-arrow-icon" viewBox="0 0 40 12" width="40" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M1 6H38M31 1L38 6L31 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#soluciones" class="link-arrow" style="font-weight:700;">
+              Ver soluciones de fluidos <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+
+          <div class="service-badges" role="list">
+            <div class="service-badge" role="listitem"><i class="fas fa-faucet-drip"></i><span>Redes Agua Potable &amp; Grado Alimenticio</span></div>
+            <div class="service-badge" role="listitem"><i class="fas fa-gauge-high"></i><span>Bombeo Presión Constante VFD</span></div>
+            <div class="service-badge" role="listitem"><i class="fas fa-fire-extinguisher"></i><span>Contra Incendio (NFPA 13/14)</span></div>
+            <div class="service-badge" role="listitem"><i class="fas fa-water"></i><span>Pruebas Hidrostáticas Certificadas</span></div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Especialidad / Espacio de Imagen -->
+        <div class="service-video-card" aria-label="Especialidad Instalaciones Hidrosanitarias">
+          <img
+            src="project_plumbing.jpg"
+            alt="Instalaciones Hidrosanitarias LEBAREF"
+            class="service-video-element"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUCIONES -->
+  <section class="service-solutions" id="soluciones" aria-labelledby="soluciones-title">
+    <div class="side-tag" aria-hidden="true">02 SOLUCIONES</div>
+    <div class="container">
+      <div class="section-top">
+        <div>
+          <span class="label">— Especialidades en Tuberías y Fluidos</span>
+          <h2 class="h2" id="soluciones-title">Soluciones Hidrosanitarias y de Bombeo</h2>
+          <p style="color:var(--c-text-muted); max-width:700px; margin-top:8px;">
+            Materiales de máxima durabilidad (cobre, Tuboplus, CPVC, polietileno de alta densidad termofusionado y fierro fundido) con pruebas de presión registradas.
+          </p>
+        </div>
+      </div>
+
+      <div class="solutions-grid">
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-pump-soap"></i></div>
+            <span class="solution-card__code">HIDRO.01</span>
+          </div>
+          <h3 class="solution-card__title">Sistemas de Bombeo Hidroneumático</h3>
+          <p class="solution-card__text">
+            Equipos hidroneumáticos con variadores de frecuencia (VFD) para mantener presión uniforme sin importar la demanda simultánea. Tanques precargados con membrana y bombas centrífugas multietapas.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Bombas sumergibles y de superficie de marcas líderes</li>
+            <li><i class="fas fa-check"></i> Alternancia y simultaneidad automática programada</li>
+            <li><i class="fas fa-check"></i> Reducción de golpe de ariete con válvulas anticipadoras</li>
+            <li><i class="fas fa-check"></i> Ahorro de energía mediante variación de velocidad</li>
+          </ul>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-hand-holding-droplet"></i></div>
+            <span class="solution-card__code">HIDRO.02</span>
+          </div>
+          <h3 class="solution-card__title">Redes de Agua Potable Fría &amp; Caliente</h3>
+          <p class="solution-card__text">
+            Tendido e interconexión de líneas hidráulicas en polipropileno copolímero (PPR/Tuboplus), cobre tipo M y L, y tubería galvanizada. Sistemas centrales de calentamiento y recirculación forzada.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Termofusión y soldadura de alta pureza</li>
+            <li><i class="fas fa-check"></i> Boilers comerciales, bombas de calor y colectores solares</li>
+            <li><i class="fas fa-check"></i> Aislamiento térmico en tubería de agua caliente (Armaflex)</li>
+            <li><i class="fas fa-check"></i> Válvulas reguladoras de presión y check de retención</li>
+          </ul>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-sink"></i></div>
+            <span class="solution-card__code">HIDRO.03</span>
+          </div>
+          <h3 class="solution-card__title">Drenaje Sanitario, Pluvial &amp; Cárcamos</h3>
+          <p class="solution-card__text">
+            Canalización de aguas negras y pluviales por gravedad y bombeo. Diseño de pendientes exactas, registros sanitarios herméticos, bajadas pluviales y cárcamos de rebombeo con trituradores.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Tubería PVC sanitario norma, PEAD corrugado y Fo.Fo.</li>
+            <li><i class="fas fa-check"></i> Trampas de grasa para cocinas y comedores industriales</li>
+            <li><i class="fas fa-check"></i> Bombas sumergibles para sólidos y aguas negras</li>
+            <li><i class="fas fa-check"></i> Sistemas de ventilación secundaria para evitar malos olores</li>
+          </ul>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-fire-extinguisher"></i></div>
+            <span class="solution-card__code">HIDRO.04</span>
+          </div>
+          <h3 class="solution-card__title">Redes Hidráulicas Contra Incendio (PCI)</h3>
+          <p class="solution-card__text">
+            Instalación de tubería de acero al carbón cedula 40 ranurada y roscada para sistemas de protección contra fuego. Gabinetes con manguera, tomas siamesas y rociadores automáticos (sprinklers).
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Cuartos de bombas contra incendio listadas UL / FM</li>
+            <li><i class="fas fa-check"></i> Bomba principal diésel, eléctrica y bomba sostenedora Jockey</li>
+            <li><i class="fas fa-check"></i> Rociadores de respuesta rápida tipo pendent y upright</li>
+            <li><i class="fas fa-check"></i> Cumplimiento con estándares NFPA 13, 14, 20 y NOM-002-STPS</li>
+          </ul>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-filter"></i></div>
+            <span class="solution-card__code">HIDRO.05</span>
+          </div>
+          <h3 class="solution-card__title">Plantas de Tratamiento &amp; Suavizadores</h3>
+          <p class="solution-card__text">
+            Acondicionamiento y purificación de agua. Filtros de lecho profundo, carbón activado, trenes de suavización con resina catiónica para calderas y ósmosis inversa para procesos críticos.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Eliminación de dureza de agua y sarro en tuberías</li>
+            <li><i class="fas fa-check"></i> Sistemas de cloración y desinfección ultravioleta (UV)</li>
+            <li><i class="fas fa-check"></i> Plantas de tratamiento de aguas residuales (PTAR) modulares</li>
+            <li><i class="fas fa-check"></i> Reutilización de agua tratada para riego y sanitarios</li>
+          </ul>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-card__header">
+            <div class="solution-card__icon"><i class="fas fa-toilet"></i></div>
+            <span class="solution-card__code">HIDRO.06</span>
+          </div>
+          <h3 class="solution-card__title">Muebles Sanitarios &amp; Grifería Institucional</h3>
+          <p class="solution-card__text">
+            Suministro y colocación de muebles de baño institucionales de alto tránsito con fluxómetros mecánicos y de sensor infrarrojo para ahorro de agua y máxima higiene.
+          </p>
+          <ul class="solution-card__features">
+            <li><i class="fas fa-check"></i> Inodoros y mingitorios secos o de bajo consumo (0.5 a 4.8 L)</li>
+            <li><i class="fas fa-check"></i> Fluxómetros Sloan, Helvex y marcas certificadas</li>
+            <li><i class="fas fa-check"></i> Grifería electrónica libre de contacto</li>
+            <li><i class="fas fa-check"></i> Muebles adaptados para personas con discapacidad (accesibilidad)</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto" aria-labelledby="contact-title">
+    <div class="side-tag" aria-hidden="true">03 CONTACTO</div>
+    <div class="contact__blueprint-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <span class="label label--blue">— Redes Hidrosanitarias</span>
+          <h2 class="h2" id="contact-title">Cotiza tu Proyecto<br/>Hidráulico</h2>
+          <p class="contact__desc">
+            Cuéntanos las características de tu inmueble (cisterna, número de salidas hidráulicas, sistema de bombeo o red contra incendio). Te formularemos un presupuesto detallado.
+          </p>
+          <ul class="contact__list" aria-label="Información de contacto">
+            <li class="contact__item"><i class="fas fa-map-marker-alt"></i><span>Calle 33 No. 259 num int 2 por 12 y 14<br/>Col. Santa María Chuburna CP. 97138<br/>Mérida, Yucatán</span></li>
+            <li class="contact__item"><i class="fas fa-phone-alt"></i><a href="tel:+529901010387">990 101 0387</a></li>
+            <li class="contact__item"><i class="fas fa-envelope"></i><a href="mailto:corporativo@lebaref.com">corporativo@lebaref.com</a></li>
+          </ul>
+          <div style="margin-top:24px;">
+            <a href="https://wa.me/529901010387?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20de%20Instalaciones%20Hidrosanitarias%20con%20LEBAREF" target="_blank" rel="noopener" class="link-arrow" style="display:inline-flex; align-items:center; gap:8px; font-weight:700; color:#25D366;">
+              <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i> Cotizar por WhatsApp
+            </a>
+          </div>
+          <div class="contact__accent-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+
+        <form class="contact__form" id="contact-form" novalidate aria-label="Formulario de cotización hidrosanitaria">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre" class="form-label">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required />
+              <span class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="empresa" class="form-label">Empresa</label>
+              <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nombre de tu empresa" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Correo *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="correo@ejemplo.com" required />
+              <span class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+52 55 0000 0000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="servicio" class="form-label">Servicio Seleccionado</label>
+            <select id="servicio" name="servicio" class="form-input form-select" required>
+              <option value="hidrosanitarias" selected>Instalaciones Hidrosanitarias</option>
+              <option value="hvac">Aire Acondicionado HVAC</option>
+              <option value="electricidad">Electricidad Baja y Media Tensión</option>
+              <option value="ti">Tecnologías de la Información (TI)</option>
+              <option value="ingenieria">Ingeniería y Obra Civil</option>
+              <option value="remodelacion">Remodelación &amp; Mantenimiento</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje" class="form-label">Detalles del Proyecto *</label>
+            <textarea id="mensaje" name="mensaje" class="form-input form-textarea" placeholder="Describe los requerimientos (agua potable, drenaje, hidroneumático, contra incendio)..." required rows="4"></textarea>
+            <span class="form-error" role="alert" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn-submit" id="submit-btn">
+            <span class="btn-text">Enviar Solicitud Hidrosanitaria</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+            <i class="fas fa-check-circle"></i>
+            ¡Solicitud hidrosanitaria recibida! Te contactaremos con prontitud.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/529901010387" class="whatsapp-fab" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba" hidden><i class="fas fa-chevron-up"></i></button>
+
+  <script src="main.js?v=3.0"></script>
+</body>
+</html>
+
